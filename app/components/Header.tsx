@@ -10,14 +10,14 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white">
+    <header className="bg-white fixed top-0 w-full z-50">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
             <div className="transition-transform transform hover:scale-110">
               <Image
                 src={logo}
-                alt="logo"
+                alt="cooking logo"
                 height={120}
                 width={130}
                 className="cursor-pointer"
@@ -31,7 +31,7 @@ const Header = () => {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    href="#home"
                   >
                     Home
                   </a>
@@ -39,7 +39,7 @@ const Header = () => {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    href="#recipes"
                   >
                     Recipes
                   </a>
@@ -47,7 +47,7 @@ const Header = () => {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    href="#blog"
                   >
                     Blog
                   </a>
@@ -55,7 +55,7 @@ const Header = () => {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    href="#about"
                   >
                     About
                   </a>
@@ -90,15 +90,14 @@ const Header = () => {
         {isMenuOpen && (
           <nav
             aria-label="Global"
-            className={`md:hidden transition-transform transform ${
-              isMenuOpen ? "translate-y-0" : "-translate-y-full"
-            }`}
+            className="md:hidden bg-white w-full mt-2 border-t border-gray-200"
           >
-            <ul className="flex flex-col items-center gap-6 text-sm mt-4">
+            <ul className="flex flex-col items-center gap-4 py-4 text-sm">
               <li>
                 <a
                   className="block text-gray-500 transition hover:text-gray-500/75"
-                  href="#"
+                  href="#home"
+                  onClick={toggleMenu}
                 >
                   Home
                 </a>
@@ -106,7 +105,8 @@ const Header = () => {
               <li>
                 <a
                   className="block text-gray-500 transition hover:text-gray-500/75"
-                  href="#"
+                  href="#recipes"
+                  onClick={toggleMenu}
                 >
                   Recipes
                 </a>
@@ -114,7 +114,8 @@ const Header = () => {
               <li>
                 <a
                   className="block text-gray-500 transition hover:text-gray-500/75"
-                  href="#"
+                  href="#blog"
+                  onClick={toggleMenu}
                 >
                   Blog
                 </a>
@@ -122,7 +123,8 @@ const Header = () => {
               <li>
                 <a
                   className="block text-gray-500 transition hover:text-gray-500/75"
-                  href="#"
+                  href="#about"
+                  onClick={toggleMenu}
                 >
                   About
                 </a>
