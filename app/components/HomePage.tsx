@@ -4,7 +4,6 @@ import MealCard from "../components/MealCard";
 import Modal from "../components/Modal";
 import { MealInterface } from "../interfaces/meal.interface";
 import { getRandomRecipe } from "../services/api";
-import { PiChefHat } from "react-icons/pi";
 
 const HomePage: React.FC = () => {
   const [meals, setMeals] = useState<MealInterface[]>([]);
