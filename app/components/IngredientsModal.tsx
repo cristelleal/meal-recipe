@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { CategoryModalProps } from "../interfaces/categoryModalProps.interface";
+import { IngredientModalProps } from "../interfaces/ingredientsModalProps.interface";
 
-const CategoryModal: React.FC<CategoryModalProps> = ({
+const IngredientModal: React.FC<IngredientModalProps> = ({
   meals,
-  selectedCategory,
+  selectedIngredient,
   onClose,
   onMealClick,
 }) => {
@@ -18,7 +18,7 @@ const CategoryModal: React.FC<CategoryModalProps> = ({
         </button>
         <div className="p-6 h-full flex flex-col">
           <h2 className="text-lg font-bold text-center mb-4">
-            Meals in {selectedCategory} category
+            Meals with {selectedIngredient}
           </h2>
           <div className="grid grid-cols-2 gap-4 overflow-y-auto h-full">
             {meals.map((meal) => (
@@ -46,4 +46,4 @@ const CategoryModal: React.FC<CategoryModalProps> = ({
   );
 };
 
-export default CategoryModal;
+export default IngredientModal;

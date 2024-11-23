@@ -4,6 +4,7 @@ import MealCard from "../components/MealCard";
 import Modal from "../components/Modal";
 import { MealInterface } from "../interfaces/meal.interface";
 import { getRandomRecipe } from "../services/api";
+import { PiChefHat } from "react-icons/pi";
 
 const HomePage: React.FC = () => {
   const [meals, setMeals] = useState<MealInterface[]>([]);
@@ -42,10 +43,12 @@ const HomePage: React.FC = () => {
     <section className="mt-[115px]">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <header>
-          <h2 className="text-3xl font-bold text-gray-900">Meal Recipes</h2>
+          <div className="flex items-center space-x-2">
+            <h2 className="text-3xl font-bold text-gray-900">Meal Recipes</h2>
+          </div>
           <p className="mt-4 max-w-md text-gray-500">
             Discover a wide variety of easy and delicious recipes for every
-            taste and skill level. Whether you're an experienced chef or a
+            taste and skill level. Whether you&apos;re an experienced chef or a
             beginner, our site offers step-by-step instructions to help you
             create mouth-watering meals at home.
           </p>

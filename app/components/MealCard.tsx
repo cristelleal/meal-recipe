@@ -26,7 +26,7 @@ const MealCard: React.FC<MealCardProps> = ({ meal, onClick }) => {
         </h3>
 
         <p className="mt-2 mb-12">
-          <span className="text-gray-400 text-xs">See more</span>
+          <span className="text-[#b5838d] text-xs">See more</span>
         </p>
       </div>
     </button>

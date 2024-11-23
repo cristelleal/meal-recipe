@@ -4,10 +4,10 @@ const Footer = () => {
       <div className="container mx-auto px-4 mt-2">
         <div className="flex flex-col items-center">
           <h2 className="text-lg font-bold mb-4 text-center">
-            Subscribe to our Newsletter
+            Subscribe to our newsletter
           </h2>
           <form className="w-full max-w-sm">
-            <div className="flex items-center border-b border-teal-500 py-2">
+            <div className="flex items-center border-b border-[#b5838d] py-2">
               <input
                 className="appearance-none bg-transparent border-none w-full text-gray-800 mr-3 py-1 px-2 leading-tight focus:outline-none"
                 type="email"
@@ -15,7 +15,7 @@ const Footer = () => {
                 aria-label="Email"
               />
               <button
-                className="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+                className="flex-shrink-0 bg-[#b5838d] hover:bg-[#b5838d] border-[#b5838d] text-sm border-4 text-white py-1 px-2 rounded"
                 type="button"
               >
                 Subscribe
@@ -24,7 +24,7 @@ const Footer = () => {
           </form>
         </div>
         <div className="mt-8 flex justify-center space-x-6">
-          <a href="#" className="text-gray-500 hover:text-teal-500">
+          <a href="#" className="text-gray-500 hover:text-[#b5838d]">
             <span className="sr-only">Facebook</span>
             <svg
               className="h-6 w-6"
@@ -39,7 +39,7 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="#" className="text-gray-500 hover:text-teal-500">
+          <a href="#" className="text-gray-500 hover:text-[#b5838d]">
             <span className="sr-only">Instagram</span>
             <svg
               className="h-6 w-6"
@@ -54,7 +54,7 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="#" className="text-gray-500 hover:text-teal-500">
+          <a href="#" className="text-gray-500 hover:text-[#b5838d]">
             <span className="sr-only">Twitter</span>
             <svg
               className="h-6 w-6"
@@ -65,7 +65,7 @@ const Footer = () => {
               <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
             </svg>
           </a>
-          <a href="#" className="text-gray-500 hover:text-teal-500">
+          <a href="#" className="text-gray-500 hover:text-[#b5838d]">
             <span className="sr-only">GitHub</span>
             <svg
               className="h-6 w-6"
@@ -82,7 +82,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="mt-8 text-center text-gray-500 text-sm">
-          © 2024 Meal Recipes - All rights reserved.
+          © 2024 Meal Recipes - CA - All rights reserved
         </div>
       </div>
     </footer>
